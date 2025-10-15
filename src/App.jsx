@@ -1,10 +1,9 @@
-// 샘플 데이터
-
 import './main.css';
 import Filter from './components/Filter';
 import CardList from './components/CardList';
 import { useState } from 'react';
 
+// 샘플 데이터
 const DATA = [
     { id: 1, title: '기술 카드 1', description: '이것은 첫 번째 카드의 설명입니다.', category: '기술' },
     { id: 2, title: '디자인 카드 1', description: '이것은 두 번째 카드의 설명입니다.', category: '디자인' },

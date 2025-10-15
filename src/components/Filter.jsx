@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Filter = ({ categories, currentCategory, onFilterChange }) => {
+const Filter = ({ categories, currentFilter, onFilterChange }) => {
     return (
         <div className="filter-container">
             <span>카테고리 필터:</span>
@@ -8,7 +6,7 @@ const Filter = ({ categories, currentCategory, onFilterChange }) => {
                 {categories.map((category) => (
                     <button
                         key={category}
-                        className={`filter-button ${currentCategory === category ? 'active' : ''}`}
+                        className={`filter-button ${currentFilter === category ? 'active' : ''}`}
                         onClick={() => onFilterChange(category)}
                     >
                         {category}
